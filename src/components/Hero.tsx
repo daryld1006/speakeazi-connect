@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary-light to-white pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-cream to-white pt-20">
       <div className="container mx-auto px-6 py-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,10 +12,10 @@ const Hero = () => {
           <span className="inline-block px-4 py-1 mb-6 text-sm font-medium text-primary bg-primary-light rounded-full">
             Professional Speech Therapy Services
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
             Empowering Communication,<br />One Voice at a Time
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-secondary-light mb-8 max-w-2xl mx-auto">
             Expert speech therapy services tailored to your unique needs. We help children and adults overcome communication challenges with personalized care.
           </p>
           <a

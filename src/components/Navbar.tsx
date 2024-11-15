@@ -14,11 +14,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-2xl font-bold text-primary">
-            SpeakEazi
+          <a href="#" className="flex items-center space-x-2">
+            <img src="/logo.png" alt="SpeakEazi" className="h-10" />
           </a>
 
           {/* Desktop Navigation */}
@@ -29,7 +29,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden"
+            className="md:hidden text-secondary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -38,7 +38,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg animate-fade-in">
+          <div className="md:hidden absolute top-full left-0 w-full bg-cream shadow-lg animate-fade-in">
             <div className="flex flex-col space-y-4 p-6">
               <a href="#services" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
               <a href="#contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>

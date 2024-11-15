@@ -21,14 +21,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-primary-light">
+    <section id="contact" className="py-20 bg-cream">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 mb-4 text-sm font-medium text-primary bg-white rounded-full">
             Get in Touch
           </span>
-          <h2 className="section-title">Contact Us</h2>
-          <p className="section-subtitle">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Contact Us</h2>
+          <p className="text-lg text-secondary-light mb-8 max-w-2xl mx-auto">
             Ready to start your journey towards better communication? We're here to help.
           </p>
         </div>
@@ -46,8 +46,8 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <h3 className="text-lg font-semibold mb-1 text-secondary">Phone</h3>
+                <p className="text-secondary-light">+1 (555) 123-4567</p>
               </div>
             </div>
 
@@ -56,8 +56,8 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1">Email</h3>
-                <p className="text-gray-600">contact@speakeazi.com</p>
+                <h3 className="text-lg font-semibold mb-1 text-secondary">Email</h3>
+                <p className="text-secondary-light">contact@speakeazi.com</p>
               </div>
             </div>
 
@@ -66,8 +66,8 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1">Location</h3>
-                <p className="text-gray-600">63 La Trobe Street<br />Melbourne, VIC 3000</p>
+                <h3 className="text-lg font-semibold mb-1 text-secondary">Location</h3>
+                <p className="text-secondary-light">63 La Trobe Street<br />Melbourne, VIC 3000</p>
               </div>
             </div>
           </motion.div>
@@ -82,7 +82,7 @@ const Contact = () => {
           >
             <div className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-secondary mb-2">
                   Name
                 </label>
                 <input
@@ -96,7 +96,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-secondary mb-2">
                   Email
                 </label>
                 <input
@@ -110,7 +110,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-secondary mb-2">
                   Message
                 </label>
                 <textarea

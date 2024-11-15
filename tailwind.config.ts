@@ -25,15 +25,16 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#4A6FA5",
-          light: "#E8F3E8",
-          dark: "#395582",
+          DEFAULT: "#F97316", // Coral orange from logo
+          light: "#FFF8E7", // Light cream
+          dark: "#C65A10", // Darker orange
         },
         secondary: {
-          DEFAULT: "#6B7280",
-          light: "#9CA3AF",
-          dark: "#4B5563",
+          DEFAULT: "#2D2D2D", // Dark gray for text
+          light: "#4A4A4A", // Lighter gray
+          dark: "#1A1A1A", // Darker gray
         },
+        cream: "#FFF5E1", // Background cream color from logo
       },
       keyframes: {
         "fade-up": {
