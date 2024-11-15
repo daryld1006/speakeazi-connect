@@ -67,7 +67,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Location</h3>
-                <p className="text-gray-600">123 Therapy Street<br />New York, NY 10001</p>
+                <p className="text-gray-600">63 La Trobe Street<br />Melbourne, VIC 3000</p>
               </div>
             </div>
           </motion.div>
