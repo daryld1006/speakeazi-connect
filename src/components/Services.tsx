@@ -1,24 +1,24 @@
-import { Speech, Users, Brain, Clock } from 'lucide-react';
+import { Sparkles, Rainbow, Star, Flower } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
   {
-    icon: Speech,
+    icon: Sparkles,
     title: "Fun Speech Activities",
     description: "Interactive games and exercises that make speech practice exciting!",
   },
   {
-    icon: Users,
+    icon: Rainbow,
     title: "Kid-Friendly Sessions",
     description: "Engaging therapy sessions designed specifically for children.",
   },
   {
-    icon: Brain,
+    icon: Star,
     title: "Learning Through Play",
     description: "Making progress while having fun with games and activities.",
   },
   {
-    icon: Clock,
+    icon: Flower,
     title: "Early Learning",
     description: "Helping young minds develop strong communication skills early.",
   },
@@ -55,7 +55,7 @@ const Services = () => {
               className="p-6 bg-white rounded-bubble shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="w-16 h-16 bg-primary-light rounded-bubble flex items-center justify-center mb-4 mx-auto">
-                <service.icon className="w-8 h-8 text-primary" />
+                <service.icon className="w-8 h-8 text-primary animate-bounce-slight" />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-secondary text-center">{service.title}</h3>
               <p className="text-secondary-light text-center">{service.description}</p>
