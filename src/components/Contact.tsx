@@ -24,12 +24,15 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-cream">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 mb-4 text-sm font-medium text-primary bg-white rounded-full">
-            Get in Touch
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Contact Us</h2>
+          <motion.span 
+            className="inline-block px-6 py-2 mb-4 text-sm font-medium text-primary bg-primary-light rounded-bubble"
+            whileHover={{ scale: 1.05 }}
+          >
+            Let's Connect
+          </motion.span>
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Get in Touch</h2>
           <p className="text-lg text-secondary-light mb-8 max-w-2xl mx-auto">
-            Ready to start your journey towards better communication? We're here to help.
+            Start your child's journey to better communication today!
           </p>
         </div>
 
@@ -42,7 +45,7 @@ const Contact = () => {
             className="space-y-8"
           >
             <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-primary-light rounded-bubble flex items-center justify-center flex-shrink-0">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <div>
@@ -52,7 +55,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-primary-light rounded-bubble flex items-center justify-center flex-shrink-0">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <div>
@@ -62,7 +65,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-primary-light rounded-bubble flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <div>
@@ -78,7 +81,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             onSubmit={handleSubmit}
-            className="bg-white rounded-xl shadow-lg p-8"
+            className="bg-white rounded-bubble shadow-lg p-8"
           >
             <div className="space-y-6">
               <div>
@@ -90,7 +93,7 @@ const Contact = () => {
                   id="name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-bubble focus:ring-2 focus:ring-primary focus:border-transparent"
                   required
                 />
               </div>
@@ -104,7 +107,7 @@ const Contact = () => {
                   id="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-bubble focus:ring-2 focus:ring-primary focus:border-transparent"
                   required
                 />
               </div>
@@ -118,17 +121,19 @@ const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-bubble focus:ring-2 focus:ring-primary focus:border-transparent"
                   required
                 ></textarea>
               </div>
 
-              <button
+              <motion.button
                 type="submit"
-                className="w-full px-8 py-3 text-white bg-primary hover:bg-primary-dark transition-colors duration-200 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="w-full px-8 py-3 text-white bg-primary hover:bg-primary-dark transition-colors duration-200 rounded-bubble shadow-lg hover:shadow-xl"
               >
                 Send Message
-              </button>
+              </motion.button>
             </div>
           </motion.form>
         </div>

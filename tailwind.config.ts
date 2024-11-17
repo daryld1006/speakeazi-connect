@@ -30,35 +30,33 @@ export default {
           dark: "#C65A10", // Darker orange
         },
         secondary: {
-          DEFAULT: "#2D2D2D", // Dark gray for text
-          light: "#4A4A4A", // Lighter gray
-          dark: "#1A1A1A", // Darker gray
+          DEFAULT: "#6E59A5", // Playful purple
+          light: "#E5DEFF", // Soft purple
+          dark: "#4A3B7A", // Dark purple
         },
-        cream: "#FFF5E1", // Background cream color from logo
+        accent: {
+          DEFAULT: "#FEC6A1", // Soft orange
+          light: "#FDE1D3", // Soft peach
+          dark: "#FDA172", // Darker peach
+        },
+        cream: "#FFF5E1", // Background cream color
+      },
+      borderRadius: {
+        'bubble': '30px',
       },
       keyframes: {
-        "fade-up": {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(20px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
-        "fade-in": {
-          "0%": {
-            opacity: "0",
-          },
-          "100%": {
-            opacity: "1",
-          },
+        "bounce-slight": {
+          "0%, 100%": { transform: "translateY(-2%)" },
+          "50%": { transform: "translateY(0)" },
         },
       },
       animation: {
-        "fade-up": "fade-up 0.5s ease-out",
-        "fade-in": "fade-in 0.3s ease-out",
+        "float": "float 6s ease-in-out infinite",
+        "bounce-slight": "bounce-slight 2s ease-in-out infinite",
       },
     },
   },
