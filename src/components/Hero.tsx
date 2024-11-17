@@ -14,7 +14,7 @@ const Hero = () => {
             className="inline-block px-6 py-2 text-sm font-medium text-primary bg-primary-light rounded-bubble animate-bounce-slight"
             whileHover={{ scale: 1.05 }}
           >
-            Fun Speech Therapy for Kids
+            Melbourne's Trusted Speech Therapy
           </motion.span>
           <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6 leading-tight">
             Let's Make Speaking
@@ -22,7 +22,7 @@ const Hero = () => {
             <span className="text-primary animate-float inline-block">Fun & Easy!</span>
           </h1>
           <p className="text-xl text-secondary-light mb-8 max-w-2xl mx-auto leading-relaxed">
-            We help children find their voice through playful and engaging speech therapy sessions. Every word is a new adventure!
+            Serving Melbourne families with compassionate speech therapy. NDIS registered provider offering both clinic and mobile services across Melbourne's suburbs.
           </p>
           <motion.a
             href="#contact"
@@ -30,7 +30,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Start the Journey
+            Book a Consultation
           </motion.a>
         </motion.div>
       </div>

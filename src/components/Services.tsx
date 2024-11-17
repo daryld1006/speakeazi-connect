@@ -1,27 +1,47 @@
-import { Sparkles, Rainbow, Star, Flower } from 'lucide-react';
+import { Sparkles, Rainbow, Star, Flower, Clock, MapPin, Baby, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
   {
     icon: Sparkles,
-    title: "Fun Speech Activities",
-    description: "Interactive games and exercises that make speech practice exciting!",
+    title: "Speech & Language Therapy",
+    description: "Expert therapy for pronunciation, fluency, and language development.",
   },
   {
     icon: Rainbow,
-    title: "Kid-Friendly Sessions",
-    description: "Engaging therapy sessions designed specifically for children.",
+    title: "Early Intervention",
+    description: "Supporting children aged 0-6 with early communication challenges.",
+  },
+  {
+    icon: Baby,
+    title: "NDIS Registered",
+    description: "Fully supported NDIS provider with flexible service options.",
   },
   {
     icon: Star,
-    title: "Learning Through Play",
-    description: "Making progress while having fun with games and activities.",
+    title: "School Readiness",
+    description: "Preparing children for success in Melbourne schools.",
+  },
+  {
+    icon: BookOpen,
+    title: "Literacy Support",
+    description: "Help with reading, writing, and phonological awareness.",
+  },
+  {
+    icon: Clock,
+    title: "Flexible Sessions",
+    description: "Before & after school appointments available.",
+  },
+  {
+    icon: MapPin,
+    title: "Mobile Services",
+    description: "Home and school visits across Melbourne suburbs.",
   },
   {
     icon: Flower,
-    title: "Early Learning",
-    description: "Helping young minds develop strong communication skills early.",
-  },
+    title: "Medicare Rebates",
+    description: "Eligible for Medicare & private health rebates.",
+  }
 ];
 
 const Services = () => {
@@ -33,13 +53,13 @@ const Services = () => {
             className="inline-block px-6 py-2 mb-4 text-sm font-medium text-primary bg-primary-light rounded-bubble"
             whileHover={{ scale: 1.05 }}
           >
-            How We Help
+            Our Services
           </motion.span>
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
-            Making Speech Therapy Fun!
+            Comprehensive Speech Therapy
           </h2>
           <p className="text-lg text-secondary-light mb-8 max-w-2xl mx-auto">
-            Every session is an adventure filled with games, stories, and activities that children love!
+            Supporting Melbourne families with evidence-based speech therapy services tailored to each child's needs.
           </p>
         </div>
 
