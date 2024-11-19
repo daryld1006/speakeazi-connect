@@ -25,13 +25,13 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.span 
-            className="inline-block px-6 py-2 mb-4 text-sm font-medium text-primary bg-primary-light rounded-bubble"
+            className="inline-block px-6 py-2 mb-4 text-sm font-medium text-primary-dark bg-primary-light rounded-bubble"
             whileHover={{ scale: 1.05 }}
           >
             Let's Connect
           </motion.span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Get in Touch</h2>
-          <p className="text-lg text-secondary-light mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">Get in Touch</h2>
+          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Start your child's journey to better communication today!
           </p>
         </div>
@@ -46,31 +46,31 @@ const Contact = () => {
           >
             <div className="flex items-start space-x-4">
               <div className="w-12 h-12 bg-primary-light rounded-bubble flex items-center justify-center flex-shrink-0">
-                <Phone className="w-6 h-6 text-primary" />
+                <Phone className="w-6 h-6 text-primary-dark" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1 text-secondary">Phone</h3>
-                <p className="text-secondary-light">+1 (555) 123-4567</p>
+                <h3 className="text-lg font-semibold mb-1 text-secondary-dark">Phone</h3>
+                <p className="text-gray-700">+1 (555) 123-4567</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
               <div className="w-12 h-12 bg-primary-light rounded-bubble flex items-center justify-center flex-shrink-0">
-                <Mail className="w-6 h-6 text-primary" />
+                <Mail className="w-6 h-6 text-primary-dark" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1 text-secondary">Email</h3>
-                <p className="text-secondary-light">contact@speakeazi.com</p>
+                <h3 className="text-lg font-semibold mb-1 text-secondary-dark">Email</h3>
+                <p className="text-gray-700">contact@speakeazi.com</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
               <div className="w-12 h-12 bg-primary-light rounded-bubble flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-6 h-6 text-primary" />
+                <MapPin className="w-6 h-6 text-primary-dark" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1 text-secondary">Location</h3>
-                <p className="text-secondary-light">63 La Trobe Street<br />Melbourne, VIC 3000</p>
+                <h3 className="text-lg font-semibold mb-1 text-secondary-dark">Location</h3>
+                <p className="text-gray-700">63 La Trobe Street<br />Melbourne, VIC 3000</p>
               </div>
             </div>
           </motion.div>
@@ -85,7 +85,7 @@ const Contact = () => {
           >
             <div className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-secondary mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-secondary-dark mb-2">
                   Name
                 </label>
                 <input
@@ -99,7 +99,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-secondary mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-secondary-dark mb-2">
                   Email
                 </label>
                 <input
@@ -113,7 +113,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-secondary mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-secondary-dark mb-2">
                   Message
                 </label>
                 <textarea
