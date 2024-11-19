@@ -11,17 +11,17 @@ const Hero = () => {
           className="space-y-8"
         >
           <motion.span 
-            className="inline-block px-6 py-2 text-sm font-medium text-primary bg-primary-light rounded-bubble animate-bounce-slight"
+            className="inline-block px-6 py-2 text-sm font-medium text-primary-dark bg-primary-light rounded-bubble animate-bounce-slight"
             whileHover={{ scale: 1.05 }}
           >
             Melbourne's Trusted Speech Therapy
           </motion.span>
-          <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-secondary-dark mb-6 leading-tight">
             Let's Make Speaking
             <br />
-            <span className="text-primary animate-float inline-block">Fun & Easy!</span>
+            <span className="text-primary-dark animate-float inline-block">Fun & Easy!</span>
           </h1>
-          <p className="text-xl text-secondary-light mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
             Serving Melbourne families with compassionate speech therapy. NDIS registered provider offering both clinic and mobile services across Melbourne's suburbs.
           </p>
           <motion.a

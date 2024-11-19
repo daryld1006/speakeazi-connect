@@ -50,15 +50,15 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.span 
-            className="inline-block px-6 py-2 mb-4 text-sm font-medium text-primary bg-primary-light rounded-bubble"
+            className="inline-block px-6 py-2 mb-4 text-sm font-medium text-primary-dark bg-primary-light rounded-bubble"
             whileHover={{ scale: 1.05 }}
           >
             Our Services
           </motion.span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
             Comprehensive Speech Therapy
           </h2>
-          <p className="text-lg text-secondary-light mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Supporting Melbourne families with evidence-based speech therapy services tailored to each child's needs.
           </p>
         </div>
@@ -75,10 +75,10 @@ const Services = () => {
               className="p-6 bg-white rounded-bubble shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="w-16 h-16 bg-primary-light rounded-bubble flex items-center justify-center mb-4 mx-auto">
-                <service.icon className="w-8 h-8 text-primary animate-bounce-slight" />
+                <service.icon className="w-8 h-8 text-primary-dark animate-bounce-slight" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-secondary text-center">{service.title}</h3>
-              <p className="text-secondary-light text-center">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-secondary-dark text-center">{service.title}</h3>
+              <p className="text-gray-700 text-center">{service.description}</p>
             </motion.div>
           ))}
         </div>
